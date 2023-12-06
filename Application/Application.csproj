@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Categories\Commands\Delete\" />
+    <Folder Include="Features\Categories\Commands\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Tobeto.Core.Persistence">
+      <HintPath>..\..\..\..\source\repos\Tobeto.Core.Packages\Tobeto.Core.Persistence\bin\Debug\net7.0\Tobeto.Core.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
